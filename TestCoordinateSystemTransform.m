@@ -13,7 +13,7 @@ accNED = zeros(3, 1);
 
 while(1)
     % Get euler, acceleration data from serial port
-    [isOK, euler, accBody] = PharseData(ser);
+    [isOK, euler, accBody] = ParseData(ser);
     
     % if data pharsing is completed, do DCM
     if isOK == 1
