@@ -9,7 +9,6 @@ if isempty(firstRun)
     k = 1;
     
     accNEDList = nan(1, length(x));
-    %accNEDList(1, :) = [];
     p = plot(x, accNEDList, 'Color', 'b');
     legend('Z Axis');
     
@@ -25,8 +24,6 @@ end
 
 % Draw Z axis acceleration
 set(p, 'ydata', accNEDList);
-%plot(x, accNEDList);
-%line(x, accNEDList);
 
 
 
