@@ -1,4 +1,4 @@
-function [check, euler, accBody] = PharseData(ser)
+function [check, euler, accBody] = ParseData(ser)
 % Get euler, accelertaion data from com port
 % Data Packet Structure is "roll pitch yaw accX accY accZ\n"
 persistent firstRun
@@ -30,4 +30,3 @@ else
     accBody(:, :) = 0;
     
     check = 0;
-end
